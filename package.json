@@ -1,0 +1,45 @@
+{
+    "name": "express-vue",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "@types/node": "^10.5.6",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "body-parser": "^1.18.3",
+        "boilerplate": "^0.6.1",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.9",
+        "express": "~4.16.0",
+        "http-errors": "~1.6.2",
+        "jade": "~1.11.0",
+        "morgan": "~1.9.0",
+        "vue": "^2.5.17"
+    },
+    "devDependencies": {
+        "@babel/types": "^7.0.0-beta.56",
+        "babel-cli": "^6.26.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-babel": "^7.0.1",
+        "gulp-coffee": "^3.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-uglify": "^3.0.1",
+        "gulp-util": "^3.0.8",
+        "merge-descriptors": "^1.0.1",
+        "winston": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/whuln/express-vue.git"
+    }
+}
