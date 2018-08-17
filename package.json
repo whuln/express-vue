@@ -12,11 +12,11 @@
     "babel-loader": "^7.1.5",
     "body-parser": "^1.18.3",
     "boilerplate": "^0.6.1",
-    "cookie-parser": "~1.4.3",    
+    "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0", 
+    "morgan": "~1.9.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -31,13 +31,16 @@
     "gulp-coffee": "^3.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-nodemon": "^2.2.1",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",   
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "merge-descriptors": "^1.0.1",
-    "winston": "^3.0.0",
-    "pug":"^2.0.3"
+    "pug": "^2.0.3",    
+    "webpack": "^4.16.5",
+    "winston": "^3.0.0"
   },
   "repository": {
     "type": "git",
