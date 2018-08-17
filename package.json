@@ -17,6 +17,7 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
+    "sequelize": "^4.38.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
@@ -25,6 +26,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
@@ -34,12 +36,13 @@
     "gulp-nodemon": "^2.2.1",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.4",   
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "merge-descriptors": "^1.0.1",
-    "pug": "^2.0.3",    
+    "pug": "^2.0.3",
     "webpack": "^4.16.5",
+    "webpack-merge": "^4.1.4",
     "winston": "^3.0.0"
   },
   "repository": {

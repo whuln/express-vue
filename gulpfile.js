@@ -1,5 +1,8 @@
 const gulp = require('gulp');
 const plugins = require('gulp-load-plugins')();
+const webpack = require('webpack');
+
+let wpConfig = require('./build/webpack.config.dev');
 
 var serverjs = {
     es6_paths: ['server/es6/*.js', 'server/es6/**/*.js'],
@@ -28,4 +31,13 @@ gulp.task('start', function () {
       script: './server/server.js'    
     , env: { 'NODE_ENV': 'development' }
     })
-  })
+});
+
+gulp.task('webpack',function(){   
+    webpack(wpConfig,(err, stats) => {
+        if (err || stats.hasErrors()) {
+            console.log("err" + err);
+        }
+        console.log("webpack done!");
+      });
+});
