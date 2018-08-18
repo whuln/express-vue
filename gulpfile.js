@@ -26,18 +26,26 @@ gulp.task('build-coff', () => {
 
 });
 
-gulp.task('start', function () {
-    plugins.nodemon({
-      script: './server/server.js'    
-    , env: { 'NODE_ENV': 'development' }
-    })
-});
-
-gulp.task('webpack',function(){   
-    webpack(wpConfig,(err, stats) => {
+gulp.task('webpack', function() {
+    webpack(wpConfig, (err, stats) => {
         if (err || stats.hasErrors()) {
             console.log("err" + err);
         }
         console.log("webpack done!");
-      });
+    });
 });
+
+gulp.task('watch', function() {
+    gulp.watch(serverjs.es6_paths, ['build-es6']);
+    gulp.watch(serverjs.coffee_paths, ['build-coff']);
+    gulp.watch('./client/*', ['webpack']);
+});
+
+gulp.task('start', function() {
+    plugins.nodemon({
+        script: './server/server.js',
+        env: { 'NODE_ENV': 'development' }
+    })
+});
+
+gulp.task('default', ['build-es6', 'build-coff', 'webpack', 'watch', 'start']);
